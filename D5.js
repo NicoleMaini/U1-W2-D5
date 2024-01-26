@@ -34,8 +34,8 @@ pets.push(pets.shift());
 console.log(pets);
 
 /* ESERCIZIO 5
-    Dato il seguente array di oggetti, scrivi del codice per aggiungere ad ognuno di essi una proprietà 
-    "licensePlate" con valore a tua scelta.
+    Dato il seguente array di oggetti, scrivi del codice per aggiungere ad ognuno di essi una 
+    proprietà "licensePlate" con valore a tua scelta.
 */
 const cars = [
   {
@@ -59,12 +59,10 @@ const cars = [
 ]
 
 for(let i = 0; i < cars.length; i++){
-  cars[i].licensePlate = "BG 555 GB";
+  cars[i].licensePlate = `BR ${Math.floor(Math.random() * 900) + 100} RB`;
 };
 
 console.log(cars);
-
-//rendere targa dinamica se c'è tempo
 
 /* ESERCIZIO 6
     Scrivi del codice per aggiungere un nuovo oggetto in ultima posizione nell'array "cars", 
@@ -81,8 +79,6 @@ let addObjToCars = {
 
 cars.push(addObjToCars);
 console.log(cars);
-
-
 
 /* ESERCIZIO 7
     Scrivi del codice per salvare il primo elemento della proprietà "trims" di ogni auto nel 
@@ -113,7 +109,6 @@ for(let i = 0; i < cars.length; i++){
     }
   };
 
-
 /* ESERCIZIO 9
     Utilizza un ciclo while per stampare in console i valori del seguente array numerico fino 
     al raggiungimento del numero 32.
@@ -121,13 +116,12 @@ for(let i = 0; i < cars.length; i++){
 const numericArray = [
   6, 90, 45, 75, 84, 98, 35, 74, 31, 2, 8, 23, 100, 32, 66, 313, 321, 105,
 ]
-// let i = 0;
-// console.log(numericArray.length);
-// while(i < numericArray.length){
-//   if(numericArray[i] === 32){}
+let i = 0;
 
-  
-// }
+while(numericArray[i] !== 32){
+  console.log(numericArray[i]);
+  i++;
+}
 
 /* ESERCIZIO 10
     Partendo dall'array fornito e utilizzando un costrutto switch, 
@@ -138,41 +132,23 @@ const numericArray = [
 const charactersArray = ['g', 'n', 'u', 'z', 'd']
 const alphabetArray = [];
 
-// for(let i = 0; charactersArray.length; i++){
-//   switch (charactersArray[i]) {
-//   case 'g':
-//     alphabetArray.push(7);
-//     break;
-//     case "n":
-//     alphabetArray.push(12);
-//       break;
-//   case "u":
-//   alphabetArray.push(19);
-//     break;
-//     case "z":
-//     alphabetArray.push(21);
-//       break;
-//       case "d":
-//         alphabetArray.push(4);
-//           break;
-//   }
-// }
-
-switch (charactersArray) {
-  case charactersArray[0] === 'g':
-    alphabetArray.push(7);
-    break;
-    case "n":
-    alphabetArray.push(12);
+for(let i = 0; i < charactersArray.length; i++){
+  switch (charactersArray[i]) {
+  case 'g':
+      alphabetArray.push(7);
+      break;
+  case "n":
+     alphabetArray.push(12);
       break;
   case "u":
-  alphabetArray.push(19);
-    break;
-    case "z":
-    alphabetArray.push(21);
+      alphabetArray.push(19);
       break;
-      case "d":
+  case "z":
+      alphabetArray.push(21);
+      break;
+  case "d":
         alphabetArray.push(4);
-          break;
+      break;
   }
+}
 console.log(alphabetArray);
