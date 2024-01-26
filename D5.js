@@ -26,6 +26,16 @@ console.log(pets.sort());
 
 console.log(pets.reverse());
 
+// soluzione 2
+
+// attraversiamo l'array da destra a sinistra. 
+// ovvero partiamo dalla fine (let i = 0; poi diciamo che il tutto si deve fermare quando i arriva a 0, 
+// e poi lo facciamo scorrere all'indietro)
+
+for(let i = pets.length - 1; i >= 0; i--){
+console.log(pets[i]);
+}
+
 /* ESERCIZIO 4
     Scrivi del codice per spostare il primo elemento dall'array "pets" in ultima posizione.
 */
@@ -60,7 +70,8 @@ const cars = [
 
 for(let i = 0; i < cars.length; i++){
   cars[i].licensePlate = `BR ${Math.floor(Math.random() * 900) + 100} RB`;
-};
+  // cars[i].licensePlate = "AB00" + i + "CD"
+}
 
 console.log(cars);
 
@@ -75,10 +86,20 @@ let addObjToCars = {
     model: 'Panda',
     color: 'black',
     trims: ['life', 'style'],
+    // licensePlate: "AB001CD",
 }
 
 cars.push(addObjToCars);
 console.log(cars);
+
+// pezzo dell'esercizio dimenticato...
+
+// for(let i = 0; i < cars.length; i++){
+//   let trimsArr = cars[i].trims
+//   trimsArr.pop();
+// }
+// console.log(cars);
+
 
 /* ESERCIZIO 7
     Scrivi del codice per salvare il primo elemento della proprietà "trims" di ogni auto nel 
