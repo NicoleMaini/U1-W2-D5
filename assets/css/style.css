@@ -1,0 +1,137 @@
+/* Your styles here */
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    background-color: #e9edee;
+}
+
+/* HEADER */
+nav, footer{
+    background-color: #222f3f;
+}
+nav img{
+    width: 10%;
+    padding-block: 1rem;
+    padding-inline: 2rem;
+}
+
+ul, footer p{
+    background-color: #364757;
+    padding-block: 0.75rem;
+    padding-inline-start: 1.5rem;
+
+}
+nav ul li{
+    display: inline;
+    margin-inline-start: 1.5rem;
+}
+
+li a{
+    color: white;
+    text-decoration: none;
+}
+
+/* MAIN */
+
+main, footer{
+    text-align: center;
+}
+
+main{
+    width: 96%;
+    margin-inline: auto;
+}
+
+.promotion{
+    background-color: #f56600;
+    color: white;
+    padding-block: 0.5rem;
+    margin-block: 2rem;
+}
+
+.banner{
+    background-image: url(../images/bg-image.png);
+    background-position: top;
+    color: white;
+    padding-block-start: 4.5rem;
+    padding-block-end: 3rem;
+    margin-block: 2rem;
+}
+
+.banner h2{
+    font-weight: bold;
+    font-size: 1.75rem;
+    padding-block-end: 1.5rem;
+}
+
+.banner p {
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+/* CARD */
+
+.card_container{
+    background-color: white;
+    margin-block-end: 2rem;
+}
+
+.card_container h3{
+    text-align: left;
+    padding: 2rem;
+}
+.card{
+    display: inline-block;
+    width: 22%;
+    height: 30rem;
+    margin-inline: 1.2rem;
+    border-radius: 1.5rem;
+    margin-block-end: 2rem;
+    overflow: hidden;
+    box-shadow: 8px  8px 10px rgb(225, 224, 224);
+}
+.card img{
+    object-fit: cover;
+    height: 100%;
+}
+
+img{
+    width: 100%;
+}
+
+/* IMMAGINI */
+
+main a {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #1f7a8f;
+    margin-inline-start: 1.5rem;
+}
+
+.container img{
+    margin-block-start: 2rem;
+    margin-block-end: 0.2rem;
+}
+
+/* FOOTER */
+
+
+footer p{
+    margin-block-start: 2rem;
+    padding-block: 1.5rem;
+}
+
+footer a{
+    font-weight: bold;
+    color: white;
+
+}
+
+footer img{
+    width: 10%;
+    padding-block-start: 5rem;
+    padding-block-end: 2rem;
+    margin-inline-start: 2rem;
+}
